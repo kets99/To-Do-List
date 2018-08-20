@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset =' utf-8'>
+    <title>Sample Boards</title>
+                <link href="styles.css" rel="stylesheet" />
+
+    <script type='text/javascript' src='onek.js'></script>
+</head>
+<body>
+<h2>To-Do List App</h2>
+<p>Click on the 'Create new boards' to create another board ! </p>
+<p> One board has already been created below :  </p>
+<b>To-Do List!</b>
+<div id="myform">
+        <p>Items :</p>
+        <input type="text" id="name" placeholder="Enter info..">
+        <input type="button" id="add" value="Add" onclick="addRow()">
+</div>
+<div id="mydata">
+<b>Current list ..</b>
+<table id="myTableData"  border="1" cellpadding="2">
+    <tr>
+        <td>&nbsp; </td>
+        <td>&nbsp; </td>
+        <td>To-Do</td> 
+    </tr>
+</table>
+</div>
+<div id="newboard">
+    <input type="button" value="Create new board " onclick="addTable()">
+</div>
+</body>
+</html>
